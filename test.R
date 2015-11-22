@@ -1,0 +1,12 @@
+#test plots
+source("plot1.R")
+Sys.sleep(5)
+source("plot2.R")
+Sys.sleep(5)
+source("plot3.R")
+Sys.sleep(5)
+source("plot4.R")
+Sys.sleep(5)
+source("plot5.R")
+Sys.sleep(5)
+source("plot6.R")

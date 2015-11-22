@@ -12,7 +12,7 @@ library(ggplot2)
 NEI <- NEI[NEI$fips == "24510",] #Set to Baltimore City
 gNEI <- group_by(NEI,year,type) 
 summ <- gNEI %>% summarize_each(funs(sum),Emissions)
-png(file="plot3.png",width=480,height=480) #set width and height for consistent reproduction
-qplot(data=summ, year,Emissions,facets= . ~ type,geom=c("point","smooth"),method="lm") + labs(title="Emissions over Time by Type")
+png(file="plot3.png",width=700,height=480) #set width and height for consistent reproduction
+qplot(data=summ, year,Emissions,facets= . ~ type,geom=c("point","smooth"),method="lm") + labs(title="Baltimore Emissions over Time by Type")
 
 dev.off()
